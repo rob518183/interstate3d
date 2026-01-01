@@ -1,0 +1,76 @@
+# Machine Gun Model - Interstate 3D
+# Simple mounted machine gun
+
+# Barrel vertices
+v 0.0 0.05 0.8      # Barrel tip top
+v 0.03 0.05 0.8     # Barrel tip right
+v 0.03 -0.05 0.8    # Barrel tip bottom right
+v 0.0 -0.05 0.8     # Barrel tip bottom
+v -0.03 -0.05 0.8   # Barrel tip bottom left
+v -0.03 0.05 0.8    # Barrel tip left
+
+v 0.0 0.04 0.0      # Barrel base top
+v 0.04 0.04 0.0     # Barrel base right
+v 0.04 -0.04 0.0    # Barrel base bottom right
+v 0.0 -0.04 0.0     # Barrel base bottom
+v -0.04 -0.04 0.0   # Barrel base bottom left
+v -0.04 0.04 0.0    # Barrel base left
+
+# Mount/gun body vertices
+v -0.1 0.1 -0.2     # Body top left
+v 0.1 0.1 -0.2      # Body top right
+v 0.1 -0.1 -0.2     # Body bottom right
+v -0.1 -0.1 -0.2    # Body bottom left
+
+v -0.08 0.08 -0.4   # Body back top left
+v 0.08 0.08 -0.4    # Body back top right
+v 0.08 -0.08 -0.4   # Body back bottom right
+v -0.08 -0.08 -0.4  # Body back bottom left
+
+# Texture coordinates
+vt 0.5 0.0
+vt 0.75 0.0
+vt 1.0 0.5
+vt 0.75 1.0
+vt 0.5 1.0
+vt 0.25 1.0
+vt 0.0 0.5
+vt 0.25 0.0
+
+# Vertex normals
+vn 0.0 0.0 1.0
+vn 0.0 0.0 -1.0
+vn 0.0 1.0 0.0
+vn 0.0 -1.0 0.0
+vn 1.0 0.0 0.0
+vn -1.0 0.0 0.0
+
+# Barrel faces (hexagonal)
+f 1/1/1 2/2/1 8/2/2 7/1/2
+f 2/2/1 3/3/1 9/3/2 8/2/2
+f 3/3/1 4/4/1 10/4/2 9/3/2
+f 4/4/1 5/5/1 11/5/2 10/4/2
+f 5/5/1 6/6/1 12/6/2 11/5/2
+f 6/6/1 1/1/1 7/1/2 12/6/2
+
+# Barrel end caps
+f 1/1/1 6/6/1 5/5/1 4/4/1 3/3/1 2/2/1
+f 7/1/2 8/2/2 9/3/2 10/4/2 11/5/2 12/6/2
+
+# Gun body faces
+f 13/1/3 14/2/3 18/2/4 17/1/4
+f 14/2/3 15/3/3 19/3/4 18/2/4
+f 15/3/3 16/4/3 20/4/4 19/3/4
+f 16/4/3 13/1/3 17/1/4 20/4/4
+
+# Body top and bottom
+f 13/1/5 14/2/5 15/3/5 16/4/5
+f 20/4/6 19/3/6 18/2/6 17/1/6
+
+# Connect barrel to body
+f 7/1/2 8/2/2 14/2/3 13/1/3
+f 8/2/2 9/3/2 15/3/3 14/2/3
+f 9/3/2 10/4/2 16/4/3 15/3/3
+f 10/4/2 11/5/2 13/1/3 16/4/3
+f 11/5/2 12/6/2 17/1/4 13/1/3
+f 12/6/2 7/1/2 18/2/4 17/1/4

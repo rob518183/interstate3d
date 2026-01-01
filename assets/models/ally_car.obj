@@ -1,0 +1,74 @@
+# Ally Vehicle Model - Interstate 3D
+# Friendly vehicle with more rounded, defensive appearance
+
+# Vertices - More rounded, defensive design
+v 0.0 0.4 1.8      # Front center top (lower, rounded)
+v -0.9 0.4 1.4     # Front left top
+v 0.9 0.4 1.4      # Front right top
+v -1.0 0.3 0.4     # Side left front
+v 1.0 0.3 0.4      # Side right front
+v -0.9 0.4 -0.6    # Side left back
+v 0.9 0.4 -0.6     # Side right back
+v -0.7 0.4 -1.4    # Back left top
+v 0.7 0.4 -1.4     # Back right top
+v 0.0 0.3 -1.8     # Back center top
+
+v 0.0 0.0 1.8      # Front center bottom
+v -0.9 0.0 1.4     # Front left bottom
+v 0.9 0.0 1.4      # Front right bottom
+v -1.0 0.0 0.4     # Side left front bottom
+v 1.0 0.0 0.4      # Side right front bottom
+v -0.9 0.0 -0.6    # Side left back bottom
+v 0.9 0.0 -0.6     # Side right back bottom
+v -0.7 0.0 -1.4    # Back left bottom
+v 0.7 0.0 -1.4     # Back right bottom
+v 0.0 0.0 -1.8     # Back center bottom
+
+# Texture coordinates
+vt 0.5 0.0
+vt 0.0 0.0
+vt 1.0 0.0
+vt 0.0 0.5
+vt 1.0 0.5
+vt 0.0 1.0
+vt 1.0 1.0
+vt 0.5 1.0
+
+# Vertex normals
+vn 0.0 1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 -1.0
+vn -1.0 0.0 0.0
+vn 1.0 0.0 0.0
+
+# Faces - Top surface
+f 1/1/1 2/2/1 11/2/2 12/1/2
+f 2/2/1 3/3/1 13/3/2 11/2/2
+f 3/3/1 5/4/1 15/4/2 13/3/2
+f 5/4/1 4/5/1 14/5/2 15/4/2
+f 4/5/1 2/2/1 12/1/2 14/5/2
+
+f 6/6/1 7/7/1 17/7/2 16/6/2
+f 7/7/1 8/8/1 18/8/2 17/7/2
+f 8/8/1 10/1/1 20/1/2 18/8/2
+f 10/1/1 9/2/1 19/2/2 20/1/2
+f 9/2/1 6/6/1 16/6/2 19/2/2
+
+# Front hood (gentle slope)
+f 1/1/3 3/3/3 13/3/2 12/1/2
+f 1/1/3 2/2/3 12/1/2
+
+# Rear trunk (gentle slope)
+f 10/1/4 8/8/4 18/8/2 20/1/2
+f 10/1/4 9/2/4 20/1/2
+
+# Left side
+f 2/2/5 4/5/5 14/5/2 12/1/2
+f 4/5/5 6/6/5 16/6/2 14/5/2
+f 6/6/5 8/8/5 18/8/2 16/6/2
+
+# Right side
+f 3/3/6 5/4/6 15/4/2 13/3/2
+f 5/4/6 7/7/6 17/7/2 15/4/2
+f 7/7/6 9/2/6 19/2/2 17/7/2

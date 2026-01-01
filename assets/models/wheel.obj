@@ -1,0 +1,77 @@
+# Wheel Model - Interstate 3D
+# Simple wheel with tire tread
+
+# Vertices - Outer rim
+v 0.0 0.2 0.0      # Top center
+v 0.2 0.14 0.14    # Top right front
+v 0.28 0.0 0.2     # Right front
+v 0.2 -0.14 0.14   # Bottom right front
+v 0.0 -0.2 0.0     # Bottom center
+v -0.2 -0.14 0.14  # Bottom left front
+v -0.28 0.0 0.2    # Left front
+v -0.2 0.14 0.14   # Top left front
+
+# Vertices - Inner rim (hub)
+v 0.0 0.1 0.0      # Top center inner
+v 0.1 0.07 0.07    # Top right inner
+v 0.14 0.0 0.1     # Right inner
+v 0.1 -0.07 0.07   # Bottom right inner
+v 0.0 -0.1 0.0     # Bottom center inner
+v -0.1 -0.07 0.07  # Bottom left inner
+v -0.14 0.0 0.1    # Left inner
+v -0.1 0.07 0.07   # Top left inner
+
+# Back face vertices
+v 0.0 0.2 -0.05     # Top center back
+v 0.2 0.14 -0.05    # Top right back
+v 0.28 0.0 -0.05    # Right back
+v 0.2 -0.14 -0.05   # Bottom right back
+v 0.0 -0.2 -0.05    # Bottom center back
+v -0.2 -0.14 -0.05  # Bottom left back
+v -0.28 0.0 -0.05   # Left back
+v -0.2 0.14 -0.05   # Top left back
+
+# Texture coordinates
+vt 0.5 0.0
+vt 0.75 0.25
+vt 1.0 0.5
+vt 0.75 0.75
+vt 0.5 1.0
+vt 0.25 0.75
+vt 0.0 0.5
+vt 0.25 0.25
+vt 0.5 0.5
+
+# Vertex normals
+vn 0.0 1.0 0.0
+vn 0.0 -1.0 0.0
+vn 0.0 0.0 1.0
+vn 0.0 0.0 -1.0
+vn 1.0 0.0 0.0
+vn -1.0 0.0 0.0
+
+# Front face
+f 1/1/1 2/2/1 10/2/2 9/1/2
+f 2/2/1 3/3/1 11/3/2 10/2/2
+f 3/3/1 4/4/1 12/4/2 11/3/2
+f 4/4/1 5/5/1 13/5/2 12/4/2
+f 5/5/1 6/6/1 14/6/2 13/5/2
+f 6/6/1 7/7/1 15/7/2 14/6/2
+f 7/7/1 8/8/1 16/8/2 15/7/2
+f 8/8/1 1/1/1 9/1/2 16/8/2
+
+# Hub center
+f 9/9/1 10/10/1 11/11/1 12/12/1 13/13/1 14/14/1 15/15/1 16/16/1
+
+# Back face
+f 17/1/4 18/2/4 19/3/4 20/4/4 21/5/4 22/6/4 23/7/4 24/8/4
+
+# Side faces connecting front to back
+f 1/1/3 17/1/4 18/2/4 2/2/3
+f 2/2/3 18/2/4 19/3/4 3/3/3
+f 3/3/3 19/3/4 20/4/4 4/4/3
+f 4/4/3 20/4/4 21/5/4 5/5/3
+f 5/5/3 21/5/4 22/6/4 6/6/3
+f 6/6/3 22/6/4 23/7/4 7/7/3
+f 7/7/3 23/7/4 24/8/4 8/8/3
+f 8/8/3 24/8/4 17/1/4 1/1/3

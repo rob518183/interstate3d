@@ -1,0 +1,117 @@
+# Rocket Launcher Model - Interstate 3D
+# Simple rocket launcher with tube design
+
+# Main body vertices
+v -0.08 0.06 0.0    # Body top left
+v 0.08 0.06 0.0     # Body top right
+v 0.08 -0.06 0.0    # Body bottom right
+v -0.08 -0.06 0.0   # Body bottom left
+
+v -0.08 0.06 -0.8   # Body back top left
+v 0.08 0.06 -0.8    # Body back top right
+v 0.08 -0.06 -0.8   # Body back bottom right
+v -0.08 -0.06 -0.8  # Body back bottom left
+
+# Rocket tube vertices (left tube)
+v -0.12 0.04 0.2    # Left tube top left
+v -0.04 0.04 0.2    # Left tube top right
+v -0.04 -0.04 0.2   # Left tube bottom right
+v -0.12 -0.04 0.2   # Left tube bottom left
+
+v -0.12 0.04 0.6    # Left tube front top left
+v -0.04 0.04 0.6    # Left tube front top right
+v -0.04 -0.04 0.6   # Left tube front bottom right
+v -0.12 -0.04 0.6   # Left tube front bottom left
+
+# Rocket tube vertices (right tube)
+v 0.04 0.04 0.2     # Right tube top left
+v 0.12 0.04 0.2     # Right tube top right
+v 0.12 -0.04 0.2    # Right tube bottom right
+v 0.04 -0.04 0.2    # Right tube bottom left
+
+v 0.04 0.04 0.6     # Right tube front top left
+v 0.12 0.04 0.6     # Right tube front top right
+v 0.12 -0.04 0.6    # Right tube front bottom right
+v 0.04 -0.04 0.6    # Right tube front bottom left
+
+# Grip handle vertices
+v -0.03 0.1 -0.3    # Grip top
+v 0.03 0.1 -0.3     # Grip top right
+v 0.03 0.06 -0.3    # Grip bottom right
+v -0.03 0.06 -0.3   # Grip bottom
+
+v -0.03 0.1 -0.5    # Grip back top
+v 0.03 0.1 -0.5     # Grip back top right
+v 0.03 0.06 -0.5    # Grip back bottom right
+v -0.03 0.06 -0.5   # Grip back bottom
+
+# Texture coordinates
+vt 0.0 0.0
+vt 0.25 0.0
+vt 0.5 0.0
+vt 0.75 0.0
+vt 1.0 0.0
+vt 0.0 0.5
+vt 0.25 0.5
+vt 0.5 0.5
+vt 0.75 0.5
+vt 1.0 0.5
+vt 0.0 1.0
+vt 0.25 1.0
+vt 0.5 1.0
+vt 0.75 1.0
+vt 1.0 1.0
+
+# Vertex normals
+vn 0.0 0.0 1.0
+vn 0.0 0.0 -1.0
+vn 0.0 1.0 0.0
+vn 0.0 -1.0 0.0
+vn 1.0 0.0 0.0
+vn -1.0 0.0 0.0
+
+# Main body faces
+f 1/1/1 2/2/1 6/2/2 5/1/2
+f 2/2/1 3/3/1 7/3/2 6/2/2
+f 3/3/1 4/4/1 8/4/2 7/3/2
+f 4/4/1 1/1/1 5/1/2 8/4/2
+
+# Body top and bottom
+f 1/1/3 2/2/3 3/3/3 4/4/3
+f 8/4/4 7/3/4 6/2/4 5/1/4
+
+# Left rocket tube
+f 9/5/1 10/6/1 14/6/2 13/5/2
+f 10/6/1 11/7/1 15/7/2 14/6/2
+f 11/7/1 12/8/1 16/8/2 15/7/2
+f 12/8/1 9/5/1 13/5/2 16/8/2
+
+# Left tube front and back
+f 13/5/3 14/6/3 15/7/3 16/8/3
+f 12/8/4 11/7/4 10/6/4 9/5/4
+
+# Right rocket tube
+f 17/9/1 18/10/1 22/10/2 21/9/2
+f 18/10/1 19/11/1 23/11/2 22/10/2
+f 19/11/1 20/12/1 24/12/2 23/11/2
+f 20/12/1 17/9/1 21/9/2 24/12/2
+
+# Right tube front and back
+f 21/9/3 22/10/3 23/11/3 24/12/3
+f 20/12/4 19/11/4 18/10/4 17/9/4
+
+# Grip handle
+f 25/13/1 26/14/1 30/14/2 29/13/2
+f 26/14/1 27/15/1 31/15/2 30/14/2
+f 27/15/1 28/16/1 32/16/2 31/15/2
+f 28/16/1 25/13/1 29/13/2 32/16/2
+
+# Grip top and bottom
+f 25/13/3 26/14/3 27/15/3 28/16/3
+f 32/16/4 31/15/4 30/14/4 29/13/4
+
+# Connect tubes to body
+f 9/5/1 10/6/1 2/2/1 1/1/1
+f 17/9/1 18/10/1 2/2/1 1/1/1
+f 3/3/1 4/4/1 12/8/1 11/7/1
+f 3/3/1 4/4/1 20/12/1 19/11/1
