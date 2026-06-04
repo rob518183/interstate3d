@@ -86,12 +86,3 @@ or run the test executable directly (see the test CMake target name in the `test
 
 **Contributing**
 - Feel free to open issues or submit pull requests. Provide a short description, steps to reproduce (if applicable), and which platform/compiler you used.
-
-**License**
-- No license file is included. Add a `LICENSE` if you want to make the licensing explicit.
-
----
-
-If you want, I can also:
-- Add a minimal `README` badge list (build status, dependencies).
-- Add a `CONTRIBUTING.md` or example CI workflow for automated builds and tests.
